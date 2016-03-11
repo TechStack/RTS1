@@ -32,11 +32,26 @@ public class WorldGen : MonoBehaviour {
             Vector3 v3 = Input.mousePosition;
             //v3.z = 10;
             //v3 = Camera.main.ScreenToWorldPoint(v3);
+
+
+            //test
             Ray ray = Camera.main.ScreenPointToRay(v3);
             RaycastHit hit;
             Physics.Raycast(ray, out hit);
+            Vector3 tmp = hit.point;
+            //tmp.y = tmp.y + .5f;
+            int tmpx, tmpy, tmpz = 0;
 
-            var go = Instantiate(Block, hit.point, transform.rotation);
+            tmp = tmp - (hit.normal*-1);
+            tmpx = Mathf.RoundToInt(tmp.x);
+            tmpy = Mathf.RoundToInt(tmp.y) ;
+            tmpz = Mathf.RoundToInt( tmp.z);
+            
+            tmp.y = tmpy;   
+            tmp.x = tmpx;
+            tmp.z = tmpz;
+
+            var go = Instantiate(Block, tmp, transform.rotation);
             Debug.Log("Mouse 1 Click:" + Input.mousePosition);
                 }
 }
