@@ -27,14 +27,17 @@ public class WorldGen : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1))
         {
-            var v3 = Input.mousePosition;
-            v3.z = 10;
-            v3 = Camera.main.ScreenToWorldPoint(v3);
-            
-            var go = Instantiate(Block, v3, transform.rotation);
+            Vector3 v3 = Input.mousePosition;
+            //v3.z = 10;
+            //v3 = Camera.main.ScreenToWorldPoint(v3);
+            Ray ray = Camera.main.ScreenPointToRay(v3);
+            RaycastHit hit;
+            Physics.Raycast(ray, out hit);
+
+            var go = Instantiate(Block, hit.point, transform.rotation);
             Debug.Log("Mouse 1 Click:" + Input.mousePosition);
                 }
-    }
+}
 }
