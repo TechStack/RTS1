@@ -5,7 +5,17 @@ using System;
 public class Inventory : MonoBehaviour, IInventory
 {
 
-    private 
+    public Texture2D Slot1;
+    public Texture2D Slot2;
+    public Texture2D Slot3;
+    public Texture2D Slot4;
+    public Texture2D Slot5;
+    public Texture2D Slot6;
+    public Texture2D Slot7;
+    public Texture2D Slot8;
+    public Texture2D Slot9;
+    
+
 
     public bool AddToFirstFreeSlot(IItemStackable item)
     {

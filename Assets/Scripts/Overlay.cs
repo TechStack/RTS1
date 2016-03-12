@@ -17,6 +17,39 @@ public class Overlay : MonoBehaviour
 
         if (inventory != null)
         {
+            int XslotPosition = -545;
+
+            GUI.DrawTexture(new Rect((Screen.width ) / 2 + XslotPosition
+                , Screen.height- inventory.Slot1.height , inventory.Slot1.width , inventory.Slot1.height ), inventory.Slot1);
+            XslotPosition = XslotPosition +inventory.Slot1.height + 5;
+
+            GUI.DrawTexture(new Rect((Screen.width) / 2 + XslotPosition
+                , Screen.height - inventory.Slot1.height, inventory.Slot1.width, inventory.Slot1.height), inventory.Slot1);
+            XslotPosition = XslotPosition + inventory.Slot1.height + 5;
+
+            GUI.DrawTexture(new Rect((Screen.width) / 2 + XslotPosition
+                , Screen.height - inventory.Slot1.height, inventory.Slot1.width, inventory.Slot1.height), inventory.Slot1);
+            XslotPosition = XslotPosition + inventory.Slot1.height + 5;
+
+            GUI.DrawTexture(new Rect((Screen.width) / 2 + XslotPosition
+                , Screen.height - inventory.Slot1.height, inventory.Slot1.width, inventory.Slot1.height), inventory.Slot1);
+            XslotPosition = XslotPosition + inventory.Slot1.height + 5;
+
+            GUI.DrawTexture(new Rect((Screen.width) / 2 + XslotPosition
+                , Screen.height - inventory.Slot1.height, inventory.Slot1.width, inventory.Slot1.height), inventory.Slot1);
+            XslotPosition = XslotPosition + inventory.Slot1.height + 5;
+
+            GUI.DrawTexture(new Rect((Screen.width) / 2 + XslotPosition
+                , Screen.height - inventory.Slot1.height, inventory.Slot1.width, inventory.Slot1.height), inventory.Slot1);
+            XslotPosition = XslotPosition + inventory.Slot1.height + 5;
+
+            GUI.DrawTexture(new Rect((Screen.width) / 2 + XslotPosition
+                , Screen.height - inventory.Slot1.height, inventory.Slot1.width, inventory.Slot1.height), inventory.Slot1);
+            XslotPosition = XslotPosition + inventory.Slot1.height + 5;
+
+            GUI.DrawTexture(new Rect((Screen.width) / 2 + XslotPosition
+                , Screen.height - inventory.Slot1.height, inventory.Slot1.width, inventory.Slot1.height), inventory.Slot1);
+
 
         }
         //if not paused
