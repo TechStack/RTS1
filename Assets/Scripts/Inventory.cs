@@ -5,6 +5,7 @@ using System;
 public class Inventory : MonoBehaviour, IInventory
 {
 
+    public 
 
     public bool AddToFirstFreeSlot(IItemStackable item)
     {

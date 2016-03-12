@@ -6,9 +6,19 @@ public class Overlay : MonoBehaviour
 
     public Texture2D crosshairTexture;
     public float crosshairScale = 1;
-
+    public GameObject Player;
+    private Inventory inventory;
+    void Start()
+    {
+        inventory = Player.GetComponent<Inventory>();
+    }
     void OnGUI()
     {
+
+        if (inventory != null)
+        {
+
+        }
         //if not paused
         if (Time.timeScale != 0)
         {
