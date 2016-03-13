@@ -8,9 +8,43 @@ ModelImporter:
     100000: //RootNode
     100002: Armature
     100004: Sphere
+    100006: Body
+    100008: Foot_Back_2_L
+    100010: Foot_Back_2_R
+    100012: foot_back_3_L
+    100014: foot_back_3_R
+    100016: FootBack_L
+    100018: FootBack_R
+    100020: FootFront2nd_L
+    100022: FootFront2nd_R
+    100024: FootFront_L
+    100026: FootFront_R
+    100028: Leg_IK_L
+    100030: Leg_IK_R
+    100032: Lowerleg_L
+    100034: Lowerleg_R
+    100036: Upper_Leg_L
+    100038: Upper_Leg_R
     400000: //RootNode
     400002: Armature
     400004: Sphere
+    400006: Body
+    400008: Foot_Back_2_L
+    400010: Foot_Back_2_R
+    400012: foot_back_3_L
+    400014: foot_back_3_R
+    400016: FootBack_L
+    400018: FootBack_R
+    400020: FootFront2nd_L
+    400022: FootFront2nd_R
+    400024: FootFront_L
+    400026: FootFront_R
+    400028: Leg_IK_L
+    400030: Leg_IK_R
+    400032: Lowerleg_L
+    400034: Lowerleg_R
+    400036: Upper_Leg_L
+    400038: Upper_Leg_R
     2300000: //RootNode
     2300002: Sphere
     3300000: //RootNode
@@ -18,6 +52,7 @@ ModelImporter:
     4300000: Sphere
     7400000: Default Take
     9500000: //RootNode
+    13700000: Sphere
   materials:
     importMaterials: 1
     materialName: 0
